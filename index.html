@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex PMT - Ultimate Custom Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito', sans-serif; background-color: #f4f4f9; }
+        
+        /* Colores de Tipos */
+        .type-Planta { background: #7AC74C; color: white; }
+        .type-Fuego { background: #EE8130; color: white; }
+        .type-Agua { background: #6390F0; color: white; }
+        .type-Normal { background: #A8A77A; color: white; }
+        .type-Eléctrico { background: #F7D02C; color: #333; }
+        .type-Bicho { background: #A6B91A; color: white; }
+        .type-Fantasma { background: #735797; color: white; }
+        .type-Veneno { background: #A33EA1; color: white; }
+        .type-Psíquico { background: #F95587; color: white; }
+        .type-Roca { background: #B6A136; color: white; }
+        .type-Tierra { background: #E2BF65; color: white; }
+        .type-Dragón { background: #6F35FC; color: white; }
+        .type-Lucha { background: #C22E28; color: white; }
+        
+        /* Badges y Cartas */
+        .type-badge { padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.15); display: inline-block;}
+        
+        .poke-card { transition: all 0.2s ease; cursor: pointer; }
+        .poke-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        .filter-btn { opacity: 0.5; transition: opacity 0.2s, transform 0.1s; }
+        .filter-btn.active { opacity: 1; transform: scale(1.1); box-shadow: 0 0 0 2px black; }
+
+        /* Modal / Carta Detallada */
+        #modal-content { transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- CABECERA Y BUSCADOR -->
+    <header class="bg-red-600 text-white p-6 sticky top-0 z-40 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-2xl font-black italic tracking-widest mb-4 flex items-center gap-2">
+                <i data-lucide="book-open" class="w-6 h-6"></i> BBDD CARTAS POKÉMON
+            </h1>
+            
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-4 top-3.5 text-gray-400 w-5 h-5"></i>
+                <input type="text" id="search-input" placeholder="Buscar por nombre o número (Ej: Pikachu, 025)..." class="w-full pl-12 p-3 rounded-xl border-none outline-none font-bold text-gray-700 shadow-inner focus:ring-4 focus:ring-red-400 transition">
+            </div>
+            
+            <!-- Filtros por Tipo -->
+            <div class="flex gap-2 mt-4 overflow-x-auto pb-2 scrollbar-hide" id="type-filters">
+                <button class="filter-btn active bg-gray-800 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('All', this)">TODOS</button>
+                <button class="filter-btn type-Fuego px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('Fuego', this)">FUEGO</button>
+                <button class="filter-btn type-Agua px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('Agua', this)">AGUA</button>
+                <button class="filter-btn type-Planta px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('Planta', this)">PLANTA</button>
+                <button class="filter-btn type-Eléctrico px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('Eléctrico', this)">ELÉCTRICO</button>
+                <button class="filter-btn type-Normal px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('Normal', this)">NORMAL</button>
+                <button class="filter-btn type-Fantasma px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap" onclick="filterByType('Fantasma', this)">FANTASMA</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- GRID DE RESULTADOS -->
+    <main class="max-w-4xl mx-auto p-4 mt-4">
+        <div id="pokedex-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Las cartas se generan con JS -->
+        </div>
+    </main>
+
+    <!-- VISOR DE CARTA AMPLIADA (MODAL) -->
+    <div id="card-modal" class="fixed inset-0 bg-gray-900/80 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity">
+        <div id="modal-content" class="bg-white rounded-3xl w-full max-w-md overflow-hidden shadow-2xl transform scale-95 relative border-4 border-gray-200">
+            
+            <button onclick="closeCard()" class="absolute top-4 right-4 z-20 bg-white/80 p-2 rounded-full hover:bg-red-100 transition"><i data-lucide="x" class="w-6 h-6 text-gray-800"></i></button>
+
+            <!-- Cabecera de la Carta -->
+            <div id="modal-header" class="relative h-40 flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+                <img id="modal-img" src="" class="w-36 h-36 object-contain drop-shadow-xl relative z-10 translate-y-4">
+            </div>
+
+            <!-- Cuerpo de la Carta -->
+            <div class="bg-white p-5 pt-8 relative">
+                <!-- Número y Nombre -->
+                <div class="flex justify-between items-end mb-2">
+                    <div>
+                        <span id="modal-id" class="text-xs font-black text-gray-400"></span>
+                        <h2 id="modal-name" class="text-3xl font-black text-gray-800 leading-none"></h2>
+                    </div>
+                    <div id="modal-types" class="flex gap-1 flex-col items-end"></div>
+                </div>
+
+                <!-- Info de Tablero (Habilidad) -->
+                <div class="bg-gray-100 rounded-lg p-2 flex items-center gap-2 mb-4 border border-gray-200">
+                    <i data-lucide="map" class="w-4 h-4 text-gray-500"></i>
+                    <span class="text-xs font-bold text-gray-600 uppercase">Tablero:</span>
+                    <span id="modal-board" class="text-xs font-black text-gray-800"></span>
+                </div>
+
+                <!-- Pasiva -->
+                <div class="mb-4">
+                    <h4 class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Habilidad Pasiva</h4>
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-2 text-sm text-blue-900 rounded-r">
+                        <strong id="modal-passive-name" class="block font-black mb-1"></strong>
+                        <span id="modal-passive-desc" class="leading-tight text-xs"></span>
+                    </div>
+                </div>
+
+                <!-- Ataques (Adaptados a 'El Mejor de 3') -->
+                <h4 class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Ataques (Choque d6)</h4>
+                <div id="modal-moves" class="space-y-2 mb-4">
+                    <!-- Dinámico -->
+                </div>
+
+                <!-- Dificultad Captura -->
+                <div class="bg-red-50 text-red-700 text-center py-2 rounded-lg text-xs font-black border border-red-200 uppercase">
+                    Captura Salvaje: <span id="modal-catch"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // BASE DE DATOS ADAPTADA A TUS NUEVAS REGLAS (Sin HP, Mejor de 3)
+        const pokemonData = [
+            {
+                id: 1, name: "Bulbasaur", type1: "Planta", type2: "Veneno",
+                catch: "Fácil (Acertar 1 Atq)", boardSkill: "Corte (Atraviesa Bosques)",
+                passive: { name: "Espesura", desc: "Si el marcador del combate está 0-1 en tu contra, tus ataques de Planta tienen +1 Poder." },
+                moves: [
+                    { name: "Drenadoras", type: "Planta", pwr: 0, isStatus: true, effect: "Ataque de Estado. Si aciertas (sacas 4+), el rival queda 'Drenado' y sufre -1 a su Puntuación Final en el resto de asaltos." },
+                    { name: "Látigo Cepa", type: "Planta", pwr: 3, isStatus: false, effect: "Daño directo. Si ganas el asalto con este ataque, anulas los estados negativos de Bulbasaur." }
+                ]
+            },
+            {
+                id: 4, name: "Charmander", type1: "Fuego", type2: null,
+                catch: "Fácil (Acertar 1 Atq)", boardSkill: "Destello (Ignora cuevas)",
+                passive: { name: "Mar Llamas", desc: "Si el marcador está 0-1, tus ataques de Fuego tienen +1 Poder." },
+                moves: [
+                    { name: "Arañazo", type: "Normal", pwr: 2, isStatus: false, effect: "Daño directo rápido." },
+                    { name: "Ascuas", type: "Fuego", pwr: 3, isStatus: false, effect: "Con un 6 natural en tu dado, aplicas estado 'Quemado' (-1 Poder al rival el resto del combate)." }
+                ]
+            },
+            {
+                id: 16, name: "Pidgey", type1: "Normal", type2: "Volador",
+                catch: "Muy Fácil (Acertar 1 Atq)", boardSkill: "Vuelo (Mueve 3 casillas libremente)",
+                passive: { name: "Vista Lince", desc: "Inmune al estado 'Precisión Bajada' (Ataque Arena, etc)." },
+                moves: [
+                    { name: "Ataque Arena", type: "Tierra", pwr: 0, isStatus: true, effect: "Estado. Si acierta (4+), el rival tira con Desventaja el resto de asaltos." },
+                    { name: "Tornado", type: "Volador", pwr: 2, isStatus: false, effect: "Daño directo." }
+                ]
+            },
+            {
+                id: 25, name: "Pikachu", type1: "Eléctrico", type2: null,
+                catch: "Medio (Mejor de 3)", boardSkill: "Destello",
+                passive: { name: "Elec. Estática", desc: "Si el rival te gana un asalto usando un ataque físico (Normal, Lucha), tira 1d6. Con 5-6, el rival queda 'Paralizado'." },
+                moves: [
+                    { name: "Onda Trueno", type: "Eléctrico", pwr: 0, isStatus: true, effect: "Estado. Si acierta (4+), Paraliza al rival (Divide su Poder Base a la mitad)." },
+                    { name: "Impactrueno", type: "Eléctrico", pwr: 3, isStatus: false, effect: "Daño directo." }
+                ]
+            },
+            {
+                id: 94, name: "Gengar", type1: "Fantasma", type2: "Veneno",
+                catch: "Jefe (Mejor de 3)", boardSkill: "Teletransporte",
+                passive: { name: "Cuerpo Maldito", desc: "Si el rival te gana un asalto, no puede repetir ese mismo ataque en el asalto siguiente." },
+                moves: [
+                    { name: "Hipnosis", type: "Psíquico", pwr: 0, isStatus: true, effect: "Estado. (Acierta 5+). El rival se 'Duerme' (Puntuación 0 en este asalto y en el próximo)." },
+                    { name: "Come Sueños", type: "Fantasma", pwr: 5, isStatus: false, effect: "Solo puedes usarlo si el rival está Dormido. Ganas el asalto automáticamente." }
+                ]
+            }
+        ];
+
+        let activeFilter = 'All';
+
+        // INICIALIZACIÓN
+        function init() {
+            renderGrid(pokemonData);
+            document.getElementById('search-input').addEventListener('input', handleSearch);
+        }
+
+        function renderGrid(data) {
+            const grid = document.getElementById('pokedex-grid');
+            grid.innerHTML = '';
+            
+            if(data.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center text-gray-400 py-10 font-bold">No se encontraron Pokémon.</div>';
+                return;
+            }
+
+            data.forEach(pk => {
+                const card = document.createElement('div');
+                card.className = "bg-white p-3 rounded-2xl shadow-sm border border-gray-100 poke-card flex flex-col items-center relative overflow-hidden";
+                card.onclick = () => openCard(pk);
+                
+                card.innerHTML = `
+                    <div class="absolute top-0 right-0 w-16 h-16 opacity-20 rounded-bl-full type-${pk.type1}"></div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pk.id}.png" class="w-20 h-20 object-contain drop-shadow-md z-10">
+                    <span class="text-[10px] font-black text-gray-400 mt-2">Nº ${String(pk.id).padStart(3, '0')}</span>
+                    <h3 class="font-black text-gray-800 text-sm leading-tight text-center">${pk.name}</h3>
+                    <div class="flex gap-1 mt-1">
+                        <span class="type-badge type-${pk.type1}">${pk.type1}</span>
+                        ${pk.type2 ? `<span class="type-badge type-${pk.type2}">${pk.type2}</span>` : ''}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function handleSearch(e) {
+            const term = e.target.value.toLowerCase();
+            filterData(term, activeFilter);
+        }
+
+        function filterByType(type, btnElement) {
+            activeFilter = type;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btnElement.classList.add('active');
+            
+            const term = document.getElementById('search-input').value.toLowerCase();
+            filterData(term, activeFilter);
+        }
+
+        function filterData(term, type) {
+            let filtered = pokemonData.filter(p => 
+                (p.name.toLowerCase().includes(term) || p.id.toString().includes(term)) &&
+                (type === 'All' || p.type1 === type || p.type2 === type)
+            );
+            renderGrid(filtered);
+        }
+
+        // CONTROL DEL MODAL (CARTA AMPLIADA)
+        function openCard(pk) {
+            // Cabecera
+            document.getElementById('modal-header').className = `relative h-40 flex items-center justify-center overflow-hidden type-${pk.type1}`;
+            document.getElementById('modal-img').src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pk.id}.png`;
+            
+            // Datos base
+            document.getElementById('modal-id').innerText = `Nº ${String(pk.id).padStart(3, '0')}`;
+            document.getElementById('modal-name').innerText = pk.name;
+            document.getElementById('modal-types').innerHTML = `
+                <span class="type-badge type-${pk.type1}">${pk.type1}</span>
+                ${pk.type2 ? `<span class="type-badge type-${pk.type2}">${pk.type2}</span>` : ''}
+            `;
+            
+            // Tablero y Pasiva
+            document.getElementById('modal-board').innerText = pk.boardSkill;
+            document.getElementById('modal-passive-name').innerText = pk.passive.name;
+            document.getElementById('modal-passive-desc').innerText = pk.passive.desc;
+            
+            // Ataques
+            const movesHtml = pk.moves.map(m => `
+                <div class="border border-gray-200 rounded-lg p-3 ${m.isStatus ? 'bg-purple-50 border-purple-200' : 'bg-white'} shadow-sm">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="font-black text-gray-800">${m.name}</span>
+                        <div class="flex gap-2 items-center">
+                            <span class="text-[9px] font-bold text-gray-500 uppercase">${m.type}</span>
+                            <span class="bg-gray-800 text-white px-2 py-0.5 rounded text-[10px] font-black">PWR ${m.pwr}</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 leading-snug">${m.effect}</p>
+                </div>
+            `).join('');
+            document.getElementById('modal-moves').innerHTML = movesHtml;
+            
+            document.getElementById('modal-catch').innerText = pk.catch;
+
+            // Animar entrada
+            const modal = document.getElementById('card-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                content.classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeCard() {
+            const modal = document.getElementById('card-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.add('opacity-0');
+            content.classList.add('scale-95');
+            setTimeout(() => { modal.classList.add('hidden'); }, 300);
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
