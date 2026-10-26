@@ -1,0 +1,5 @@
+id,name,gen,types,evolvesTo,regions,abilities,props,color,canMega,canGmax,mega,gmax,aliases,image,text,forms
+025_ash,Pikachu de Ash,1,electric,,kanto,,starter,,,,,,,,,
+052_alola,Meowth de Alola,7,dark,053_alola,alola,,,,,,,,,,,
+052_rocket,Meowth del Team Rocket,1,normal,,kanto,,starter,,,,,,,,,
+058_hisui,Growlithe de Hisui,8,fire;rock,059_hisui,hisui,,,,,,,,,,,

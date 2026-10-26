@@ -1,0 +1,587 @@
+id,name,gen,types,evolvesTo,regions,abilities,props,color,canMega,canGmax,mega,gmax,aliases,image,text,forms
+001,Bulbasaur,1,grass;poison,002,kanto,,,pink,,,,,,,"Habilidad: Espesura — Gana +1 al total si usas un movimiento de tipo Planta y el resultado del dado de combate fue 2 o menos
+Captura: 3+
+Ataque 1: Latigo Cepa (Planta, D6, potencia 2)
+Ataque 2: Gruñido (Normal, D6, potencia 0) — N-D6",
+002,Ivysaur,1,grass;poison,003,kanto,,,blue,,,,,,,"Habilidad: Espesura — Gana +1 al total si usas un movimiento de tipo Planta y el resultado del dado de combate fue 2 o menos
+Captura: 5+
+Ataque 1: Hoja Afilada (Planta, D6, potencia 2) — D6 +5
+Ataque 2: Derribo (Normal, D6, potencia 3) — KO 5",
+003,Venusaur,1,grass;poison,,kanto,,,red,si,,,,,,"Habilidad: Espesura — Gana +1 al total si usas un movimiento de tipo Planta y el resultado del dado de combate fue 2 o menos
+Captura: 7+
+Ataque 1: Doble Filo (Normal, D6, potencia 4) — KO 5
+Ataque 2: Somnífero (Planta, D6, potencia 0) — Dormido, Espera
+Ataque 3: Rayo Solar (Planta, D6, potencia 4) — Stat. Down",
+004,Charmander,1,fire,005,kanto,,,pink,,,,,,,"Habilidad: Mar Llamas — Gana +1 al total si usas un movimiento de tipo fuego y el resultado del dado de combate fue 2 o menos
+Captura: 3+
+Ataque 1: Ascuas (Fuego, D6, potencia 2) — Quemado 6
+Ataque 2: Gruñido (Normal, D6, potencia 0) — N-D6",
+005,Charmeleon,1,fire,006,kanto,,,blue,,,,,,,"Habilidad: Mar Llamas — Gana +1 al total si usas un movimiento de tipo fuego y el resultado del dado de combate fue 2 o menos
+Captura: 5+
+Ataque 1: Colmillo Ígneo (Fuego, D8, potencia 2) — Quemado 6, N-D6 +6
+Ataque 2: Cuchillada (Normal, D8, potencia 2) — B-D6 +5",
+006,Charizard,1,fire;flying,,kanto,fly,,red,si,,,,,,"Habilidad: Mar Llamas — Gana +1 al total si usas un movimiento de tipo fuego y el resultado del dado de combate fue 2 o menos
+Captura: 7+
+Ataque 1: Tajo Aéreo (Volador, D8, potencia 2)
+Ataque 2: Onda ígnea (Fuego, D6, potencia 3) — Quemado 6
+Ataque 3: Envite Ígneo (Fuego, D6, potencia 4) — B-KO +5",
+007,Squirtle,1,water,008,kanto,surf,,pink,,,,,,,"Habilidad: Torrente — Gana +1 al total si usas un movimiento de tipo agua y el resultado del dado de combate fue 2 o menos
+Captura: 3+
+Ataque 1: Pistola Agua (Agua, D6, potencia 2)
+Ataque 2: Látigo (Normal, D6, potencia 0) — D6 +1",
+008,Wartortle,1,water,009,kanto,surf,,blue,,,,,,,"Habilidad: Torrente — Gana +1 al total si usas un movimiento de tipo agua y el resultado del dado de combate fue 2 o menos
+Captura: 5+
+Ataque 1: Hidropulso (Agua, D6, potencia 2) — Confuso 5
+Ataque 2: Mordisco (Siniestro, D6, potencia 2) — N-D6 +5",
+009,Blastoise,1,water,,kanto,surf,,red,si,,,,,,"Habilidad: Torrente — Gana +1 al total si usas un movimiento de tipo agua y el resultado del dado de combate fue 2 o menos
+Captura: 7+
+Ataque 1: Protección (Normal, D6, potencia 0) — Protección, No repite
+Ataque 2: Cabezazo (Acero, D6, potencia 3) — N-D6 +4, No repite
+Ataque 3: Hidrobomba (Agua, D8, potencia 3)",
+010,Caterpie,1,bug,011,kanto,,,pink,,,,,,,"Habilidad: Polvo Escudo — Inmune a N-D6 de movimientos
+Captura: 3+
+Ataque 1: Disparo Demora (Bicho, D6, potencia 0) — N-D6",
+011,Metapod,1,bug,012,kanto,,,pink,,,,,,,"Habilidad: Mudar — Si sufre algún estado. Al final de cada turno tira un dado y si saca 4 o más, cura el estado.
+Captura: 4+
+Ataque 1: Fortaleza (Bicho, D6, potencia 0) — N-D6",
+012,Butterfree,1,bug;flying,,kanto,,,green,,,,,,,"Habilidad: Ojo Compuesto — Si sacas 1 en el dado de combate, puedes repetir tirada con un D4
+Captura: 5+
+Ataque 1: Zumbido (Bicho, D6, potencia 3) — D6 +6
+Ataque 2: Somnífero (Planta, D6, potencia 0) — Dormido, Espera
+Ataque 3: Viento Afín (Volador, D6, potencia 0*) — D6 +1",
+013,Weedle,1,bug;poison,014,kanto,,,pink,,,,,,,"Habilidad: Polvo Escudo — Inmune a N-D6 de movimientos
+Captura: 3+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5",
+014,Kakuna,1,bug;poison,015,kanto,,,pink,,,,,,,"Habilidad: Mudar — Si sufre algún estado. Al final de cada turno tira un dado y si saca 4 o más, cura el estado.
+Captura: 4+
+Ataque 1: Fortaleza (Bicho, D6, potencia 0) — N-D6",
+015,Beedrill,1,bug;poison,,kanto,,,green,si,,,,,,"Habilidad: Enjambre — Gana +1 al total si usas un movimiento de tipo Bicho y el resultado del dado de combate fue 2 o menos
+Captura: 5+
+Ataque 1: Doble Ataque (Bicho, D4, potencia 1) — D+, Veneno 5
+Ataque 2: Furia (Normal, D6, potencia 1) — D+puño
+Ataque 3: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5",
+016,Pidgey,1,normal;flying,017,kanto,fly,,pink,,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 3+
+Ataque 1: Tornado (Volador, D6, potencia 1)
+Ataque 2: Ataque Arena (Tierra, D6, potencia 0) — N-D6",
+017,Pidgeotto,1,normal;flying,018,kanto,fly,,blue,,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 5+
+Ataque 1: Ataque Ala (Volador, D6, potencia 2)
+Ataque 2: Ciclón (Dragón, D6, potencia 2) — B-D6",
+018,Pidgeot,1,normal;flying,,kanto,fly,,red,si,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 7+
+Ataque 1: Ataque Aéreo (Volador, D8, potencia 4) — N-D6 +5
+Ataque 2: Descanso (Psíquico, D6, potencia 0) — Revivir
+Ataque 3: Autodestrucción (Normal, D6, potencia 4) — B-KO",
+019,Rattata,1,normal,020,kanto,,,pink,,,,,,,"Habilidad: Agallas — Si el Pokemon sufre algún estado, su ataque se incrementa en +2
+Captura: 3+
+Ataque 1: Látigo (Normal, D6, potencia 0) — B-D6
+Ataque 2: Ataque Rápido (Normal, D6, potencia 2) — Prioridad",
+020,Raticate,1,normal,,kanto,,,blue,,,,,,,"Habilidad: Agallas — Si el Pokemon sufre algún estado, su ataque se incrementa en +2
+Captura: 5+
+Ataque 1: Hipercolmillo (Normal, D8, potencia 2) — N-D6 +6
+Ataque 2: Triturar (Siniestro, D8, potencia 2)",
+021,Spearow,1,normal;flying,022,kanto,fly,,pink,,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 3+
+Ataque 1: Látigo (Normal, D6, potencia 0) — B-D6
+Ataque 2: Ataque Ala (Volador, D6, potencia 2)",
+022,Fearow,1,normal;flying,,kanto,fly,,blue,,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 5+
+Ataque 1: Movimiento Espejo (Volador, D6, potencia 0) — Reflejo
+Ataque 2: Pico Taladro (Volador, D8, potencia 2)",
+023,Ekans,1,poison,024,kanto,,,pink,,,,,,,"Habilidad: Mudar — Si sufre algún estado. Al final de cada turno tira un dado y si saca 4 o más, cura el estado.
+Captura: 3+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5
+Ataque 2: Mordisco (Siniestro, D6, potencia 2) — N-D6 +5",
+024,Arbok,1,poison,,kanto,,,blue,,,,,,,"Habilidad: Mudar — Si sufre algún estado. Al final de cada turno tira un dado y si saca 4 o más, cura el estado.
+Captura: 5+
+Ataque 1: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5
+Ataque 2: Mordisco (Siniestro, D6, potencia 2) — N-D6 +5",
+025,Pikachu,1,electric,026,kanto,,,green,,,,,,,"Habilidad: Electricidad Estática — Al final de cada ronda lanza un dada de efecto Parálisis +5
+Captura: 5+
+Ataque 1: Ataque Rápido (Normal, D6, potencia 2) — Prioridad
+Ataque 2: Impactrueno (Electrico, D6, potencia 1) — Parálisis +6",
+026,Raichu,1,electric,,kanto,,,red,,,,,,,"Habilidad: Electricidad Estática — Al final de cada ronda lanza un dada de efecto Parálisis +5
+Captura: 7+
+Ataque 1: Atizar (Normal, D6, potencia 3)
+Ataque 2: Moflete Estático (Electrico, D6, potencia 1) — Parálisis
+Ataque 3: Trueno (Electrico, D8, potencia 3) — Parálisis +5",
+027,Sandshrew,1,ground,028,kanto,,,pink,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 3+
+Ataque 1: Arañazo (Normal, D6, potencia 1)
+Ataque 2: Ataque Arena (Tierra, D6, potencia 0) — N-D6",
+028,Sandslash,1,ground,,kanto,,,blue,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 5+
+Ataque 1: Cuchillada (Normal, D8, potencia 2)
+Ataque 2: Excavar (Tierra, D8, potencia 2)",
+029,Nidoran♀,1,poison,030,kanto,,,pink,,,,,nidoran,,"Habilidad: Punto Tóxico — Si es atacado, tira un dado, si sale 4 o más el atacante queda envenenado
+Captura: 3+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5
+Ataque 2: Látigo (Normal, D6, potencia 0) — B-D6",
+030,Nidorina,1,poison,031,kanto,,,blue,,,,,,,"Habilidad: Punto Tóxico — Si es atacado, tira un dado, si sale 4 o más el atacante queda envenenado
+Captura: 5+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5
+Ataque 2: Drenadoras (Planta, D6, potencia 1) — Repetición, Corazón",
+031,Nidoqueen,1,poison;ground,,kanto,,,red,,,,,,,"Habilidad: Punto Tóxico — Si es atacado, tira un dado, si sale 4 o más el atacante queda envenenado
+Captura: 7+
+Ataque 1: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5
+Ataque 2: Terratemblor (Tierra, D6, potencia 2) — N-D6
+Ataque 3: Roca Afilada (Roca, D6, potencia 3) — KO 6",
+032,Nidoran♂,1,poison,033,kanto,,,pink,,,,,nidoran,,"Habilidad: Punto Tóxico — Si es atacado, tira un dado, si sale 4 o más el atacante queda envenenado
+Captura: 3+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5
+Ataque 2: Látigo (Normal, D6, potencia 0) — B-D6",
+033,Nidorino,1,poison,034,kanto,,,blue,,,,,,,"Habilidad: Punto Tóxico — Si es atacado, tira un dado, si sale 4 o más el atacante queda envenenado
+Captura: 5+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5
+Ataque 2: Doble Patada (Lucha, D4, potencia 1) — Repetición",
+034,Nidoking,1,poison;ground,,kanto,,,red,,,,,,,"Habilidad: Punto Tóxico — Si es atacado, tira un dado, si sale 4 o más el atacante queda envenenado
+Captura: 7+
+Ataque 1: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5
+Ataque 2: Movimiento Sísmico (Lucha, D6, potencia *) — Ignore Type
+Ataque 3: Megacuerno (Bicho, D6, potencia 3)",
+035,Clefairy,1,fairy,036,kanto,teleport,,pink,,,,,,,"Habilidad: Gran Encanto — Cuando este Pokemon es atacado por otro, el atacante tira un dado y si el resultado es 5 o 6, queda confuso
+Captura: 4+
+Ataque 1: Canto (Normal, D6, potencia 0) — Dormido
+Ataque 2: Voz Cautivadora (Hada, D6, potencia 2) — B-D6",
+036,Clefable,1,fairy,,kanto,teleport,,blue,,,,,,,"Habilidad: Gran Encanto — Cuando este Pokemon es atacado por otro, el atacante tira un dado y si el resultado es 5 o 6, queda confuso
+Captura: 5+
+Ataque 1: Metrónomo (Normal, D6, potencia *)
+Ataque 2: Luz Lunar (Hada, D6, potencia 0) — Corazón",
+037,Vulpix,1,fire,038,kanto,,,green,,,,,,,"Habilidad: Absorbe Fuego — Gana +1 al total, si recibe un ataque de tipo fuego y el resultado en el dado de combate fue 2 o menos
+Captura: 4+
+Ataque 1: Ataque Rápido (Normal, D6, potencia 2) — Prioridad
+Ataque 2: Ascuas (Fuego, D6, potencia 2) — Quemado 6",
+038,Ninetales,1,fire,,kanto,,,yellow,,,,,,,"Habilidad: Absorbe Fuego — Gana +1 al total, si recibe un ataque de tipo fuego y el resultado en el dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Ataque Rápido (Normal, D6, potencia 2) — Prioridad
+Ataque 2: Lanzallamas (Fuego, D6, potencia 3) — Quemado 5",
+039,Jigglypuff,1,normal;fairy,040,kanto,,,pink,,,,,,,,
+040,Wigglytuff,1,normal;fairy,,kanto,,,yellow,,,,,,,,
+041,Zubat,1,poison;flying,042,kanto,fly,,pink,,,,,,,"Habilidad: Fuerza Mental — Inmune a N-DY y  a la habilidad de Intimidación.
+Captura: 3+
+Ataque 1: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5
+Ataque 2: Supersónico (Normal, D6, potencia 0) — Confuso",
+042,Golbat,1,poison;flying,169,kanto,fly,,blue,,,,,,,"Habilidad: Fuerza Mental — Inmune a N-DY y  a la habilidad de Intimidación.
+Captura: 5+
+Ataque 1: Veneno X (Veneno, D6, potencia 2) — Veneno 5
+Ataque 2: Chupavidas (Bicho, D6, potencia 1) — Corazón",
+043,Oddish,1,grass;poison,044,kanto,,,green,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 4+
+Ataque 1: Absorber (Planta, D6, potencia 1) — Corazón
+Ataque 2: Polvo Veneno (Veneno, D6, potencia 0) — Veneno 3",
+044,Gloom,1,grass;poison,045,kanto,,,blue,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 4+
+Ataque 1: Paralizador (Planta, D6, potencia 0) — Paralizado 3
+Ataque 2: Ácido (Veneno, D6, potencia 2) — D6 +6",
+045,Vileplume,1,grass;poison,,kanto,,,yellow,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 6+
+Ataque 1: Tormenta Floral (Planta, D6, potencia 3)
+Ataque 2: Polvo Veneno (Veneno, D6, potencia 0) — Veneno 3
+Ataque 3: Rayo Solar (Planta, D6, potencia 4) — Stat. Down",
+046,Paras,1,bug;grass,047,kanto,,,pink,,,,,,,"Habilidad: Efecto Espora — Al terminar la ronda de batalla lanza un D6, si sale 6=Duerme, 3=Paraliza, 1=Envenena al Pokemon rival
+Captura: 4+
+Ataque 1: Arañazo (Normal, D6, potencia 1)
+Ataque 2: Paralizador (Planta, D6, potencia 0) — Parálisis",
+047,Parasect,1,bug;grass,,kanto,,,blue,,,,,,,"Habilidad: Efecto Espora — Al terminar la ronda de batalla lanza un D6, si sale 6=Duerme, 3=Paraliza, 1=Envenena al Pokemon rival
+Captura: 5+
+Ataque 1: Somnífero (Planta, D6, potencia 0) — Dormido, Espera
+Ataque 2: Cuchillada (Normal, D8, potencia 2) — B-D6 +5
+Ataque 3: Tijera X (Bicho, D6, potencia 3)",
+048,Venonat,1,bug;poison,049,kanto,,,blue,,,,,,,"Habilidad: Ojo Compuesto — Si sacas 1 en el dado de combate, puedes repetir tirada con un D4
+Captura: 5+
+Ataque 1: Paralizador (Planta, D6, potencia 0) — Paralizado 3
+Ataque 2: Rayo Señal (Bicho, D8, potencia 2) — Confuso 6",
+049,Venomoth,1,bug;poison,,kanto,,,yellow,,,,,,,"Habilidad: Ojo Compuesto — Si sacas 1 en el dado de combate, puedes repetir tirada con un D4
+Captura: 6+
+Ataque 1: Psíquico (Psíquico, D8, potencia 2) — 3Dice +6, Espera
+Ataque 2: Somnífero (Planta, D6, potencia 0) — Domrido, Espera
+Ataque 3: Zumbido (Bicho, D6, potencia 3) — B-D6 +6",
+050,Diglett,1,ground,051,kanto,,,green,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 4+
+Ataque 1: Arañazo (Normal, D6, potencia 1)
+Ataque 2: Tormenta Arena (Tierra, D6, potencia 2) — Add Dice6 +4",
+051,Dugtrio,1,ground,,kanto,,,blue,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Fisura (Tierra, D6, potencia 2) — N-KO +5
+Ataque 2: Excavar (Tierra, D8, potencia 2)",
+052,Meowth,1,normal,053,kanto,,,green,,,,,,,"Habilidad: Experto — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 4+
+Ataque 1: Día de Pago (Normal, D6, potencia 2) — Adicional 6
+Ataque 2: Mordisco (Siniestro, D6, potencia 2) — N-D6 +5",
+053,Persian,1,normal,,kanto,,,blue,,,,,,,"Habilidad: Experto — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Cuchillada (Normal, D8, potencia 2) — B-D6 +5
+Ataque 2: Carantoña (Hada, D6, potencia 3) — N-D6 +3",
+054,Psyduck,1,water,055,kanto,surf,,green,,,,,,,"Habilidad: Humedad — Ningun Pokemon en combate puede usar Autodestrucción ni Explosión. Si el Pokemon es sacado a combatir el turno en que uno de estos movimientos es elegido, este fallará.
+Captura: 4+
+Ataque 1: Confusión (Psíquico, D6, potencia 2) — Confuso 6
+Ataque 2: Anulación (Normal, D6, potencia 0*)
+Ataque 3: Hidropulso (Agua, D6, potencia 2) — Confuso 5",
+055,Golduck,1,water,,kanto,surf,,yellow,,,,,,,"Habilidad: Humedad — Ningun Pokemon en combate puede usar Autodestrucción ni Explosión. Si el Pokemon es sacado a combatir el turno en que uno de estos movimientos es elegido, este fallará.
+Captura: 7+
+Ataque 1: Cabezazo Zen (Psíquico, D6, potencia 3) — N-D6 +5
+Ataque 2: Acua Cola (Agua, D6, potencia 3)
+Ataque 3: Golpes Furia (Agua, D4, potencia D4)",
+056,Mankey,1,fighting,057,kanto,,,green,,,,,,,"Habilidad: Espíritu Vital — Este Pokemon no puede quedar Dormido
+Captura: 4+
+Ataque 1: Golpa Karate (Lucha, D8, potencia 1)
+Ataque 2: Golpes Furia (Normal, D6, potencia D4 Amarillo)",
+057,Primeape,1,fighting,979,kanto,,,yellow,,,,,,,"Habilidad: Espíritu Vital — Este Pokemon no puede quedar Dormido
+Captura: 6+
+Ataque 1: Movimiento Sísmico (Lucha, D6, potencia *) — Ignore Type
+Ataque 2: Golpe Cuerpo (Normal, D6, potencia 2) — Parálisis 4+
+Ataque 3: Enfado (Dragón, D6, potencia 3) — B-Confuso 3",
+058,Growlithe,1,fire,059,kanto,,,green,,,,,,,"Habilidad: Absorbe Fuego — Gana +1 al total, si recibe un ataque de tipo fuego y el resultado en el dado de combate fue 2 o menos
+Captura: 4+
+Ataque 1: Gruñido (Normal, D6, potencia 0) — N-D6
+Ataque 2: Ascuas (Fuego, D6, potencia 2) — Quemado 6",
+059,Arcanine,1,fire,,kanto,,,yellow,,,,,,,"Habilidad: Absorbe Fuego — Gana +1 al total, si recibe un ataque de tipo fuego y el resultado en el dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Velocidad Extrema (Normal, D6, potencia 3) — Prioridad
+Ataque 2: Colmillo Ígneo (Fuego, D8, potencia 2) — Quemado 6, N-D6 +6",
+060,Poliwag,1,water,061,kanto,surf,,pink,,,,,,,"Habilidad: Absorbe Agua — Inmune a movimientos tipo agua y sus efectos negativos. Si recibe ataque tipo agua gana + 2 en la tirada.
+Captura: 4+
+Ataque 1: Pistola Agua (Agua, D6, potencia 2)
+Ataque 2: Hipnosis (Psíquico, D6, potencia 0) — Dormido",
+061,Poliwhirl,1,water,062,kanto,surf,,blue,,,,,,,"Habilidad: Absorbe Agua — Inmune a movimientos tipo agua y sus efectos negativos. Si recibe ataque tipo agua gana + 2 en la tirada.
+Captura: 6+
+Ataque 1: Burbuja (Agua, D6, potencia 2) — N-D6 +6
+Ataque 2: Doble Bofetón (Normal, D4, potencia D4)",
+062,Poliwrath,1,water;fighting,,kanto,surf,,red,,,,,,,"Habilidad: Absorbe Agua — Inmune a movimientos tipo agua y sus efectos negativos. Si recibe ataque tipo agua gana + 2 en la tirada.
+Captura: 7+
+Ataque 1: Golpe Cuerpo (Normal, D6, potencia 3) — Paralizado 5
+Ataque 2: Acua Jet (Agua, 2, potencia D6) — Explamación
+Ataque 3: Puño Dinámico (Lucha, D6, potencia 3) — Confuso 4, Espera",
+063,Abra,1,psychic,064,kanto,teleport,,green,,,,,,,"Habilidad: Sincronía — Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado.
+Captura: 4+
+Ataque 1: Teletransporte (Psíquico, D6, potencia 0)",
+064,Kadabra,1,psychic,065,kanto,teleport,,blue,,,,,,,"Habilidad: Sincronía — Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado.
+Captura: 5+
+Ataque 1: Confusión (Psíquico, D6, potencia 2) — Confuso 4
+Ataque 2: Recuperación (Normal, D6, potencia 0) — Corazón",
+065,Alakazam,1,psychic,,kanto,teleport,,red,si,,,,,,"Habilidad: Sincronía — Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado.
+Captura: 7+
+Ataque 1: Psíquico (Psíquico, D8, potencia 2) — 3Dice +6, Espera
+Ataque 2: Recuperación (Normal, D6, potencia 0) — Corazón
+Ataque 3: Tri-Ataque (Normal, D4, potencia 3) — Adicional 6",
+066,Machop,1,fighting,067,kanto,,,green,,,,,,,"Habilidad: Agallas — Si el Pokemon sufre algún estado, su ataque se incrementa en +2
+Captura: 4+
+Ataque 1: Golpa Karate (Lucha, D8, potencia 1)
+Ataque 2: Lanzarrocas (Roca, D6, potencia 1) — N-D6 +2",
+067,Machoke,1,fighting,068,kanto,,,blue,,,,,,,"Habilidad: Agallas — Si el Pokemon sufre algún estado, su ataque se incrementa en +2
+Captura: 6+
+Ataque 1: Sumisión (Lucha, D8, potencia 2)
+Ataque 2: Avalancha (Roca, D6, potencia 2) — N-D6 +2",
+068,Machamp,1,fighting,,kanto,,,red,,,,,,,"Habilidad: Agallas — Si el Pokemon sufre algún estado, su ataque se incrementa en +2
+Captura: 7+
+Ataque 1: Avalancha (Roca, D6, potencia 2) — N-D6 +2
+Ataque 2: Puño Dinámico (Lucha, D6, potencia 3) — B-D6+2, B-Confuso
+Ataque 3: Puño Trueno (Electrico, D6, potencia 2) — Parálisis 2",
+069,Bellsprout,1,grass;poison,070,kanto,,,green,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 4+
+Ataque 1: Latigo Cepa (Planta, D6, potencia 2)
+Ataque 2: Polvo Veneno (Veneno, D6, potencia 0) — Veneno 3",
+070,Weepinbell,1,grass;poison,071,kanto,,,blue,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 5+
+Ataque 1: Somnífero (Planta, D6, potencia 0) — Dormido, Espera
+Ataque 2: Ácido (Veneno, D6, potencia 2) — D6 +6",
+071,Victreebel,1,grass;poison,,kanto,,,yellow,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 7+
+Ataque 1: Hoja Aguda (Planta, D6, potencia 3) — D6 +5
+Ataque 2: Desarme (Siniestro, D8, potencia 2) — Carta Negra
+Ataque 3: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5",
+072,Tentacool,1,water;poison,073,kanto,surf,,pink,,,,,,,"Habilidad: Cuerpo Puro — Inmune a N-D6 de movimientos o habilidades de otro pokemon.
+Captura: 4+
+Ataque 1: Hidropulso (Agua, D6, potencia 2) — Confuso 5
+Ataque 2: Picotazo Venenoso (Veneno, D6, potencia 1) — Veneno 5",
+073,Tentacruel,1,water;poison,,kanto,surf,,red,,,,,,,"Habilidad: Cuerpo Puro — Inmune a N-D6 de movimientos o habilidades de otro pokemon.
+Captura: 7+
+Ataque 1: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5
+Ataque 2: Supersónico (Normal, D6, potencia 0) — Confuso 3
+Ataque 3: Hidrobomba (Agua, D8, potencia 3)",
+074,Geodude,1,rock;ground,075,kanto,,,pink,,,,,,,"Habilidad: Robustez — Inmune a los efectos de movimientos ""KO"". Si es derrotado en la primera ronda de un combate, aguanta una ronda mas.
+Captura: 3+
+Ataque 1: Rizo Defensa (Normal, D6, potencia 0) — N-D6 +1
+Ataque 2: Lanzarrocas (Roca, D6, potencia 2)",
+075,Graveler,1,rock;ground,076,kanto,,,blue,,,,,,,"Habilidad: Robustez — Inmune a los efectos de movimientos ""KO"". Si es derrotado en la primera ronda de un combate, aguanta una ronda mas.
+Captura: 6+
+Ataque 1: Terratemblor (Tierra, D6, potencia 2) — N-D6 +1
+Ataque 2: Autodestrucción (Normal, D6, potencia 5) — B-KO, Recarga",
+076,Golem,1,rock;ground,,kanto,,,red,,,,,,,"Habilidad: Robustez — Inmune a los efectos de movimientos ""KO"". Si es derrotado en la primera ronda de un combate, aguanta una ronda mas.
+Captura: 7+
+Ataque 1: Terremoto (Tierra, D6, potencia 3)
+Ataque 2: Autodestrucción (Normal, D6, potencia 5) — B-KO, Recarga
+Ataque 3: Roca Afilada (Roca, D6, potencia 3) — KO 6",
+077,Ponyta,1,fire,078,kanto,,,yellow,,,,,,,"Habilidad: Absorbe Fuego — Gana +1 al total, si recibe un ataque de tipo fuego y el resultado en el dado de combate fue 2 o menos
+Captura: 5+
+Ataque 1: Pisotón (Normal, D6, potencia 2) — N-D6 +5
+Ataque 2: Nitrocarga (Fuego, D6, potencia 2) — Prioridad",
+078,Rapidash,1,fire,,kanto,,,red,,,,,,,"Habilidad: Absorbe Fuego — Gana +1 al total, si recibe un ataque de tipo fuego y el resultado en el dado de combate fue 2 o menos
+Captura: 7+
+Ataque 1: Derribo (Normal, D6, potencia 3) — B-KO +3
+Ataque 2: Rueda Fuego (Fuego, D6, potencia 3) — Quemado +
+Ataque 3: Envite Ígneo (Fuego, D6, potencia 4) — B-KO 5",
+079,Slowpoke,1,water;psychic,080,kanto,surf;teleport,,green,,,,,,,"Habilidad: Ritmo Propio — Inmune al estado Confuso y la habilidad Intimidación
+Captura: 4+
+Ataque 1: Bostezo (Normal, D6, potencia 0*)
+Ataque 2: Pistola Agua (Agua, D6, potencia 2)
+Ataque 3: Confusión (Psíquico, D6, potencia 2) — Confuso 6",
+080,Slowbro,1,water;psychic,,kanto,surf;teleport,,red,si,,,,,,"Habilidad: Ritmo Propio — Inmune al estado Confuso y la habilidad Intimidación
+Captura: 7+
+Ataque 1: Relajo (Normal, D6, potencia 0) — Corazones
+Ataque 2: Psíquico (Psíquico, D6, potencia 3) — D6 +6
+Ataque 3: Hidropulso (Agua, D6, potencia 2) — Confuso 5",
+081,Magnemite,1,electric;steel,082,kanto,,,green,,,,,,,"Habilidad: Robustez — Inmune a los efectos de movimientos ""KO"". Si es derrotado en la primera ronda de un combate, aguanta una ronda mas.
+Captura: 4+
+Ataque 1: Impactrueno (Electrico, D6, potencia 2) — Parálisis 6
+Ataque 2: Supersónico (Normal, D6, potencia 0) — CONFUSO",
+082,Magneton,1,electric;steel,,kanto,,,blue,,,,,,,"Habilidad: Robustez — Inmune a los efectos de movimientos ""KO"". Si es derrotado en la primera ronda de un combate, aguanta una ronda mas.
+Captura: 6+
+Ataque 1: Onda Trueno (Electrico, D6, potencia 0) — Parálisis
+Ataque 2: Bomba Imán (Acero, D6, potencia 2) — 1 CAMBIO
+Ataque 3: Tri-Ataque (Normal, D4, potencia 2) — Adicional 3",
+083,Farfetch'd,1,normal;flying,,kanto,fly,,green,,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 5+
+Ataque 1: Cortes Furia (Bicho, D6, potencia 1) — Repetición
+Ataque 2: Ataque Ala (Volador, D6, potencia 2)",
+084,Doduo,1,normal;flying,085,kanto,fly,,blue,,,,,,,"Habilidad: Madrugar — Si este Pokemon se duerme, tardará la mitad de turnos en despertarse.
+Captura: 5+
+Ataque 1: Doble Golpe (Normal, D4, potencia 2) — Add Dice
+Ataque 2: Ataque Ala (Volador, D6, potencia 2)",
+085,Dodrio,1,normal;flying,,kanto,fly,,yellow,,,,,,,"Habilidad: Madrugar — Si este Pokemon se duerme, tardará la mitad de turnos en despertarse.
+Captura: 6+
+Ataque 1: Tri-Ataque (Normal, D4, potencia 2) — Adicional 3",
+086,Seel,1,water,087,kanto,surf,,green,,,,,,,"Habilidad: Hidratación — Si la carta Lluvia está en el campo de batalla, es inmune a cualquier estado.
+Captura: 5+
+Ataque 1: Canto Helado (Hielo, D6, potencia 2) — Exclamación
+Ataque 2: Golpe Cabeza (Normal, D6, potencia 2) — N-D6 +5
+Ataque 3: Salmuera (Agua, D8, potencia 2)",
+087,Dewgong,1,water;ice,,kanto,surf,,yellow,,,,,,,"Habilidad: Hidratación — Si la carta Lluvia está en el campo de batalla, es inmune a cualquier estado.
+Captura: 7+
+Ataque 1: Acua Jet (Agua, D6, potencia 2) — Exclamación
+Ataque 2: Rayo Hielo (Hielo, D6, potencia 3) — Helado 6
+Ataque 3: Velo Sagrado (Normal, D6, potencia 0) — Escudo con picos",
+088,Grimer,1,poison,089,kanto,,,yellow,,,,,,,"Habilidad: Hedor — Si es atacado, el atacante recibe N-D6 (Desventaja)
+Captura: 5+
+Ataque 1: Disparo Lodo (Tierra, D6, potencia 2) — N-D6 +2
+Ataque 2: Tóxico (Veneno, D6, potencia 0) — Veneno",
+089,Muk,1,poison,,kanto,,,red,,,,,,,"Habilidad: Hedor — Si es atacado, el atacante recibe N-D6 (Desventaja)
+Captura: 7+
+Ataque 1: Puya Nociva (Veneno, D6, potencia 3) — Veneno 5
+Ataque 2: Terremoto (Tierra, D6, potencia 3)
+Ataque 3: Legado (Siniestro, D6, potencia 0) — N-3Dice, B-KO",
+090,Shellder,1,water,091,kanto,surf,,green,,,,,,,"Habilidad: Caparazón — Bloquea golpes críticos, no se acumula
+Captura: 4+
+Ataque 1: Refugio (Agua, D6, potencia 0) — N-D6
+Ataque 2: Carámbano (Hielo, D4, potencia D4 Amarillo)",
+091,Cloyster,1,water;ice,,kanto,surf,,yellow,,,,,,,"Habilidad: Caparazón — Bloquea golpes críticos, no se acumula
+Captura: 6+
+Ataque 1: Chuzos (Hielo, D6, potencia 3) — N-D6 +5
+Ataque 2: Protección (Normal, D6, potencia 0) — Escudo
+Ataque 3: Hidrobomba (Agua, D8, potencia 3)",
+092,Gastly,1,ghost;poison,093,kanto,,,green,,,,,,,"Habilidad: Levitación — Inmune a ataques de tipo Tierra
+Captura: 4+
+Ataque 1: Lenguetazo (Fantasma, D8, potencia 1) — Parálisis 5",
+093,Haunter,1,ghost;poison,094,kanto,,,blue,,,,,,,"Habilidad: Levitación — Inmune a ataques de tipo Tierra
+Captura: 6+
+Ataque 1: Puño Sombra (Fantasma, D6, potencia 2) — 1 CAMBIO
+Ataque 2: Vendetta (Siniestro, D6, potencia 2*)",
+094,Gengar,1,ghost;poison,,kanto,,,red,si,,,,,,"Habilidad: Levitación — Inmune a ataques de tipo Tierra
+Captura: 7+
+Ataque 1: Bola Sombra (Fantasma, D6, potencia 3) — B-D6 +5
+Ataque 2: Pulso Umbrío (Siniestro, D6, potencia 3) — N-D6 +5
+Ataque 3: Mismo Destino (Fantasma, D6, potencia 0*)",
+095,Onix,1,rock;ground,208,kanto,,,green,,,,,,,"Habilidad: Robustez — Inmune a los efectos de movimientos ""KO"". Si es derrotado en la primera ronda de un combate, aguanta una ronda mas.
+Captura: 4+
+Ataque 1: Terratemblor (Tierra, D6, potencia 2) — N-D6 +1
+Ataque 2: Avalancha (Roca, D6, potencia 2) — N-D6 +2",
+096,Drowzee,1,psychic,097,kanto,teleport,,green,,,,,,,"Habilidad: Insomnio — Este Pokemon no puede quedar Dormido
+Captura: 4+
+Ataque 1: Confusión (Psíquico, D6, potencia 2) — Confuso 4
+Ataque 2: Anulación (Normal, D6, potencia 0*)",
+097,Hypno,1,psychic,,kanto,teleport,,yellow,,,,,,,"Habilidad: Insomnio — Este Pokemon no puede quedar Dormido
+Captura: 6+
+Ataque 1: Hipnosis (Psíquico, D6, potencia 0) — Dormido
+Ataque 2: Cabezazo Zen (Psíquico, D6, potencia 3) — N-D6 +5
+Ataque 3: Maquinación (Siniestro, D6, potencia 0) — B-3Dice",
+098,Krabby,1,water,099,kanto,surf,,green,,,,,,,"Habilidad: Corte Fuerte — Inmune a N-D6 de movimientos o habilidades de otro pokemon.
+Captura: 4+
+Ataque 1: Agarre (Normal, D6, potencia 2)
+Ataque 2: Chapoteo Lodo (Tierra, D6, potencia 0*)
+Ataque 3: Burbuja (Agua, D6, potencia 2) — N-D6 +6",
+099,Kingler,1,water,,kanto,surf,,red,,,,,,,"Habilidad: Corte Fuerte — Inmune a N-D6 de movimientos o habilidades de otro pokemon.
+Captura: 7+
+Ataque 1: Disparo Lodo (Tierra, D6, potencia 2) — N-D6 +2
+Ataque 2: Guillotina (Normal, D6, potencia 0) — N-KO 5
+Ataque 3: Martillazo (Agua, D8, potencia 3) — D6 +5",
+100,Voltorb,1,electric,101,kanto,,,green,,,,,,,"Habilidad: Detonación — Cuando es debilitado sin usar Autodest. Lanza el efecto KO +6
+Captura: 4+
+Ataque 1: Onda Anómala (Electrico, D6, potencia 0) — N-3Dice
+Ataque 2: Autodestrucción (Normal, D6, potencia 4) — B-KO",
+101,Electrode,1,electric,,kanto,,,blue,,,,,,,"Habilidad: Detonación — Cuando es debilitado sin usar Autodest. Lanza el efecto KO +6
+Captura: 6+
+Ataque 1: Rayo Carga (Electrico, D6, potencia 2) — B-D6 +3
+Ataque 2: Rapidez (Normal, D6, potencia 2) — 1 CAMBIO
+Ataque 3: Explosión (Normal, D6, potencia 5) — B-KO",
+102,Exeggcute,1,grass;psychic,103,kanto,,,green,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 5+
+Ataque 1: Recurrente (Planta, D4, potencia *) — D4 Amarillo
+Ataque 2: Hipnosis (Psíquico, D6, potencia 0) — Dormido",
+103,Exeggutor,1,grass;psychic,,kanto,,,red,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 5+
+Ataque 1: Confusión (Psíquico, D6, potencia 2) — Confuso 6
+Ataque 2: Bomba Huevo (Normal, D8, potencia 3)
+Ataque 3: Mazazo (Planta, D6, potencia 4) — Stat. Down",
+104,Cubone,1,ground,105,kanto,,,blue,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 4+
+Ataque 1: Arañazo (Normal, D6, potencia 1)
+Ataque 2: Hueso Palo (Tierra, D6, potencia 2) — N-D6 +5",
+105,Marowak,1,ground,,kanto,,,yellow,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Movimiento Sísmico (Lucha, D6, potencia *) — Ignore Type
+Ataque 2: Huesomerang (Tierra, D4, potencia 3) — Add Dice
+Ataque 3: Saña (Normal, D4, potencia 3) — B-Confuso 2",
+106,Hitmonlee,1,fighting,,kanto,,,blue,,,,,,,"Habilidad: Flexibilidad — Este Pokemon no puede quedar Paralizado
+Captura: 6+
+Ataque 1: Patada Salto (Lucha, D6, potencia 3)
+Ataque 2: Patada ígnea (Fuego, D6, potencia 2) — Quemado 3",
+107,Hitmonchan,1,fighting,,kanto,,,blue,,,,,,,"Habilidad: Vista Lince — Siempre acierta sus ataques
+Captura: 6+
+Ataque 1: Puño Certero (Lucha, D6, potencia 4)
+Ataque 2: Puño Trueno (Electrico, D6, potencia 2) — Parálisis 2",
+108,Lickitung,1,normal,463,kanto,,,yellow,,,,,,,"Habilidad: Ritmo Propio — Inmune al estado Confuso y la habilidad Intimidación
+Captura: 6+
+Ataque 1: Descanso (Psíquico, D6, potencia 0) — Revivir
+Ataque 2: Doble Filo (Normal, D8, potencia 3) — B-KO +4
+Ataque 3: Rodar (Tierra, D6, potencia 1) — Adicional 4",
+109,Koffing,1,poison,110,kanto,,,blue,,,,,,,"Habilidad: Gas Reactivo — Mientras esté en el terreno de combate, anula las habilidades de los demás Pokemon activos
+Captura: 5+
+Ataque 1: Gas Venenoso (Veneno, D6, potencia 0) — Veneno 2
+Ataque 2: Niebla Clara (Veneno, D6, potencia 1) — B-D6",
+110,Weezing,1,poison,,kanto,,,red,,,,,,,"Habilidad: Gas Reactivo — Mientras esté en el terreno de combate, anula las habilidades de los demás Pokemon activos
+Captura: 6+
+Ataque 1: Residuos (Veneno, D6, potencia 2) — Veneno 3
+Ataque 2: Legado (Siniestro, D6, potencia 0) — N-3Dice, B-KO
+Ataque 3: Autodestrucción (Normal, D6, potencia 4) — B-KO",
+111,Rhyhorn,1,ground;rock,112,kanto,,,yellow,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Avalancha (Roca, D6, potencia 2) — N-D6 +2
+Ataque 2: Excavar (Tierra, D8, potencia 2)",
+112,Rhydon,1,ground;rock,464,kanto,,,red,,,,,,,"Habilidad: Velo Arena — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 7+
+Ataque 1: Terremoto (Tierra, D6, potencia 3)
+Ataque 2: Megacuerno (Bicho, D6, potencia 3)
+Ataque 3: Roca Afilada (Roca, D6, potencia 3) — N-KO 6",
+113,Chansey,1,normal,242,kanto,,,yellow,,,,,,,"Habilidad: Cura Natural — Se cura cualquier estado al salir de la batalla
+Captura: 6+
+Ataque 1: Descanso (Psíquico, D6, potencia 0) — Revivir
+Ataque 2: Luz Lunar (Hada, D6, potencia 0) — Corazón
+Ataque 3: Bomba Huevo (Normal, D6, potencia 3)",
+114,Tangela,1,grass,465,kanto,,,blue,,,,,,,"Habilidad: Clorofila — Gana +1 D6 si la carta de ""Dia Soleado"" está en el campo de batalla.
+Captura: 5+
+Ataque 1: Drenadoras (Planta, D6, potencia 1) — Repetición, Corazón
+Ataque 2: Poder Pasado (Roca, D6, potencia 2)",
+115,Kangaskhan,1,normal,,kanto,,,yellow,si,,,,,,"Habilidad: Intrépido — Alcanza a Pokémon de tipo Fantasma con movimientos de tipo Normal o Lucha. Además, no sufre los efectos de Intimidación.
+Captura: 6+
+Ataque 1: Enfado (Dragón, D8, potencia 2) — W-Confuso 2
+Ataque 2: Movimiento Sísmico (Lucha, D6, potencia *) — Ignore Type
+Ataque 3: Última Baza (Normal, D6, potencia 4*)",
+116,Horsea,1,water,117,kanto,surf,,green,,,,,,,"Habilidad: Nado Rápido — Gana +1 D6 si la carta de ""Lluvia"" está en el campo de batalla.
+Captura: 4+
+Ataque 1: Pistola Agua (Agua, D6, potencia 2)
+Ataque 2: Pantalla Humo (Normal, D6, potencia 0) — N-D6",
+117,Seadra,1,water,230,kanto,surf,,blue,,,,,,,"Habilidad: Francotirador — Gana +2 de fuerza adicional si consigues el resultado mas alto en el dado de combate
+Captura: 6+
+Ataque 1: Ciclón (Dragón, D6, potencia 2) — N-D6 +5
+Ataque 2: Agilidad (Psíquico, D6, potencia 0) — D6 * 3
+Ataque 3: Rayo Burbuja (Agia, D8, potencia 2) — N-D6 +6",
+118,Goldeen,1,water,119,kanto,surf,,pink,,,,,,,"Habilidad: Nado Rápido — Gana +1 D6 si la carta de ""Lluvia"" está en el campo de batalla.
+Captura: 4+
+Ataque 1: Picotazo (Volador, D8, potencia 1)
+Ataque 2: Hidropulso (Agua, D6, potencia 2) — Confuso 5
+Ataque 3: Cornada (Normal, D8, potencia 2)",
+119,Seaking,1,water,,kanto,surf,,yellow,,,,,,,"Habilidad: Nado Rápido — Gana +1 D6 si la carta de ""Lluvia"" está en el campo de batalla.
+Captura: 7+
+Ataque 1: Cascada (Agua, D6, potencia 3) — N-D6 +5
+Ataque 2: Perforador (Normal, D6, potencia 0) — N-KO 5
+Ataque 3: Megacuerdo (Bicho, D8, potencia 3)",
+120,Staryu,1,water,121,kanto,surf,,green,,,,,,,"Habilidad: Cura Natural — Se cura cualquier estado al salir de la batalla
+Captura: 4+
+Ataque 1: Rapidez (Normal, D6, potencia 2) — 1 rotación
+Ataque 2: Psicoonda (Psíquico, D6) — 1/2 LVL, Viñeta
+Ataque 3: Rayo Burbuja (Agia, D8, potencia 2) — N-D6 +6",
+121,Starmie,1,water;psychic,,kanto,surf,,yellow,,,,,,,"Habilidad: Cura Natural — Se cura cualquier estado al salir de la batalla
+Captura: 7+
+Ataque 1: Psíquico (Psíquico, D6, potencia 3) — N-D6 +6
+Ataque 2: Giro Rápido (Normal, D6*2, potencia 2) — Viento
+Ataque 3: Hidrobomba (Agua, D8, potencia 3)",
+122,Mr. Mime,1,psychic;fairy,,kanto,teleport,,green,,,,,,,"Habilidad: Filtro — Mitiga el daño que le infligen los movimientos supereficaces, en lugar de +4 hacen +2
+Captura: 5+
+Ataque 1: Barrera (Psíquico, D6, potencia 0) — N-3Dice
+Ataque 2: Mimético (Normal, D6, potencia *)",
+123,Scyther,1,bug;flying,212,kanto,,,yellow,,,,,,,"Habilidad: Experto — Gana +2 al total, si el resultado del dado de combate fue 2 o menos
+Captura: 6+
+Ataque 1: Cuchillada (Normal, D8, potencia 2) — B-D6 +5
+Ataque 2: Corte Furia (Bicho, D6, potencia 2) — Repetición
+Ataque 3: Tajo Umbrío (Siniestro, D8, potencia 2) — B-D6 +5",
+124,Jynx,1,ice;psychic,,kanto,,,yellow,,,,,,,Captura: 6+,
+125,Electabuzz,1,electric,,kanto,,,yellow,,,,,,,,
+126,Magmar,1,fire,,kanto,,,yellow,,,,,,,,
+127,Pinsir,1,bug,,kanto,,,yellow,,,,,,,,
+128,Tauros,1,normal,,kanto,,,yellow,,,,,,,"Habilidad: Intimidación — Aplica N-D6 +4 al entrar en combate (solo al inicio, al ser intercambiado o al megaevolucionar)
+Captura: 6+
+Ataque 1: Descanso (Psíquico, D6, potencia 0) — Revivir
+Ataque 2: Terremoto (Tierra, D6, potencia 3)
+Ataque 3: Gigaimpacto (Normal, D6, potencia 4) — Espera",
+129,Magikarp,1,water,130,kanto,surf,,pink,,,,,,,"Habilidad: Nado Rápido — Gana +1 D6 si la carta de ""Lluvia"" está en el campo de batalla.
+Captura: 4+
+Ataque 1: Salpicadura (Normal, D6, potencia 0)
+Ataque 2: Placaja (Normal, D6, potencia 2)",
+130,Gyarados,1,water;flying,,kanto,surf,,red,si,,,,,,"Habilidad: Intimidación — Aplica N-D6 +4 al entrar en combate (solo al inicio, al ser intercambiado o al megaevolucionar)
+Captura: 7+
+Ataque 1: Hidrobomba (Agua, D8, potencia 3)
+Ataque 2: Colmillo Hielo (Hielo, D8, potencia 2) — Helado 6
+Ataque 3: Hiperrayo (Normal, D6, potencia 4) — Stat. Down",
+131,Lapras,1,water;ice,,kanto,surf,,blue,,,,,,,"Habilidad: Caparazón — Bloquea golpes críticos, no se acumula
+Captura: 6+
+Ataque 1: Canto Helado (Hielo, D6, potencia 2) — Exclamación
+Ataque 2: Rayo Confuso (Fantasma, D6, potencia 0) — Confuso
+Ataque 3: Hidrobomba (Agua, D8, potencia 3)",
+132,Ditto,1,normal,,kanto,,,yellow,,,,,,,"Habilidad: Flexibilidad — Este Pokemon no puede quedar Paralizado
+Captura: 6+
+Ataque 1: Transformación (Normal, D6, potencia 0*)",
+133,Eevee,1,normal,134;135;136,kanto,,,green,,,,,,,"Habilidad: Adaptable — Gana +1 en el total al atacar con movimientos de tipo normal.
+Captura: 5+
+Ataque 1: Látigo (Normal, D6, potencia 0) — D6 +1
+Ataque 2: Última Baza (Normal, D6, potencia 4*)",
+134,Vaporeon,1,water,,kanto,surf,,yellow,,,,,,,"Habilidad: Absorbe Agua — Inmune a movimientos tipo agua y sus efectos negativos. Si recibe ataque tipo agua gana + 2 en la tirada.
+Captura: 7+
+Ataque 1: Ataque Rápido (Normal, D6, potencia 2) — Exclamación
+Ataque 2: Rayo Aurora (Hielo, D8, potencia 2) — N-D6 +6
+Ataque 3: Hidrobomba (Agua, D8, potencia 3)",
+135,Jolteon,1,electric,,kanto,,,yellow,,,,,,,,
+136,Flareon,1,fire,,kanto,,,yellow,,,,,,,,
+137,Porygon,1,normal,233,kanto,teleport,,green,,,,,,,"Habilidad: Calco — Copia la habilidad del rival al entrar en combate.
+Captura: 4+
+Ataque 1: Poder Pasado (Roca, D6, potencia 2)
+Ataque 2: Psicorayo (Psíquico, D8, potencia 2) — Confuso 6",
+138,Omanyte,1,rock;water,,kanto,,,blue,,,,,,,,
+139,Omastar,1,rock;water,,kanto,,,red,,,,,,,,
+140,Kabuto,1,rock;water,,kanto,,,blue,,,,,,,,
+141,Kabutops,1,rock;water,,kanto,,,red,,,,,,,,
+142,Aerodactyl,1,rock;flying,,kanto,,,yellow,,,,,,,,
+143,Snorlax,1,normal,,kanto,,,blue,,,,,,,"Habilidad: Sebo — Reduce en -2 la potencia de los ataques de tipo Hielo y Fuego que recibe este Pokemon.
+Captura: 6+
+Ataque 1: Puño Dinámico (Lucha, D6, potencia 3) — D6 +2, Confuso 1
+Ataque 2: Descanso (Psíquico, D6, potencia 0) — Revivir
+Ataque 3: Gigaimpacto (Normal, D6, potencia 4) — Espera",
+144,Articuno,1,ice;flying,,kanto,,,legendary,,,,,,,,
+145,Zapdos,1,electric;flying,,kanto,,,legendary,,,,,,,,
+146,Moltres,1,fire;flying,,kanto,fly,,legendary,,,,,,,,
+147,Dratini,1,dragon,,kanto,,,green,,,,,,,,
+148,Dragonair,1,dragon,,kanto,,,yellow,,,,,,,,
+149,Dragonite,1,dragon;flying,,kanto,,,red,,,,,,,,
+150,Mewtwo,1,psychic,,kanto,teleport,,legendary,,,,,,,,
+151,Mew,1,psychic,,kanto,teleport,,legendary,,,,,,,,
+463,Lickilicky,4,normal,,sinnoh,,,red,,,,,,,,
